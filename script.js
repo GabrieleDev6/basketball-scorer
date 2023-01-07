@@ -108,4 +108,5 @@ function reset() {
     homePoints.style.color = "#F94F6D"
     guestPoints.style.color = "#F94F6D"
     resetTimer()
+    newGame()
 }
