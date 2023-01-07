@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segna Punti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="timer">
+        <div id="timer-display"><p id="time">00:00</p></div>
+    </div>
+    <div id="counter">
+        <div class="board">
+            <div class="column">
+                <p>HOME</p>
+                <div class="display">
+                    <p id="home">0</p>
+                </div>
+                <div>
+                    <button class="btn" id="h1" onclick="h1()">+1</button>
+                    <button class="btn" id="h2" onclick="h2()">+2</button>
+                    <button class="btn" id="h3" onclick="h3()">+3</button>
+                </div>
+            </div>
+            <div class="column">
+                <p>GUEST</p>
+                <div class="display">
+                    <p id="guest">0</p>
+                </div>
+                <div>
+                    <button class="btn" id="g1" onclick="g1()">+1</button>
+                    <button class="btn" id="g2" onclick="g2()">+2</button>
+                    <button class="btn" id="g3" onclick="g3()">+3</button>
+                </div>
+            </div>
+
+        </div>
+        <button class="control-btn" id="pause" onclick="pauseTimer()">PAUSE</button>
+        <button class="control-btn" id="new-game" onclick="reset()">+NEW GAME</button>
+        <button class="control-btn" id="resume" onclick="resumeTimer()">RESUME</button>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
